@@ -4,7 +4,6 @@ import com.wang.pet.common.BaseResponse;
 import com.wang.pet.entity.Type;
 import com.wang.pet.service.ITypeService;
 import com.wang.pet.util.HttpUtil;
-import com.wang.pet.util.ImageUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
