@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: pet-service
+    #  jackson:
+    #设置空如何序列化
+    defaultPropertyInclusion: NON_NULL

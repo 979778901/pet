@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:mysql://47.105.151.169:3306/test?rewriteBatchedStatements=true&useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: xffobmOV
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: pet-service
+    #  jackson:
+    #设置空如何序列化
+    defaultPropertyInclusion: NON_NULL
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 9981
+
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  typeAliasesPackage: com.wang.pet.entity.*
+  configuration:
+    map-underscore-to-camel-case: true
+    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+folder:
+  path: C:\Users\DELL\Desktop\公众号\协议\
